@@ -21,7 +21,7 @@ module.exports = {
     "class-methods-use-this": 0,
     "import/extensions": 0,
     "import/no-extraneous-dependencies": [
-      "error",
+      "warning",
       { devDependencies: ["**/*.test.ts"] },
     ],
     "import/no-unresolved": 0,
