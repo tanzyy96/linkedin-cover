@@ -28,6 +28,7 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
+    "hnswlib-node": "^1.4.2",
     "langchain": "^0.0.39",
     "puppeteer": "^19.9.1"
   },

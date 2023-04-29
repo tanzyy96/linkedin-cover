@@ -1,0 +1,56 @@
+About the job
+Padlet is building software for a good education. A good education is one that inspires curiosity, creativity, and community. Our software enables that through visual content creation and collaboration in millions of classrooms worldwide.
+
+Exceptional products are exceptional in all dimensions that matter. Take the Dyson vacuum cleaner. Not only is it a good at vacuuming, it’s beautiful, feels good in the hand, is portable, and is easy to use. We are looking for Fullstack Engineers to build exceptional software products for a billion people.
+
+Responsibilities
+Owning and implementing new features that touch multiple layers of the tech stack. E.g. creating a beautiful search experience.
+Creating delight. E.g. through animations and micro UI.
+Making the web apps faster and more reliable. E.g. reducing javascript payload or making network requests more resilient.
+Improving how we work. E.g. improving our component library or tools we use to translate the web app into 40+ languages.
+
+Qualifications
+At some point in your life, someone has told you: “you write good code.”
+You know how to copy-paste code from Stack Overflow.
+Bonus: you have a good sense of humor.
+
+About Padlet
+Vision: Every child in the world will grow up with Mickey Mouse and Padlet.
+Product: We are making the default way of collecting and sharing thoughts on the Internet. People love the product.
+Impact: We have over 50 million active users making Padlet one of the most used apps on the planet. Our goal is to be THE the most used app on the planet.
+Money: We are venture backed AND profitable. We are built to last one hundred years.
+Badassery: We are 36 people (plus a baby crane that we've adopted but it doesn't really do much). That's over a million active users per employee. Some badass people work here.
+
+Tech stack
+Web: VueJS, Tailwind.
+Backend: Ruby (Rails), Typescript, Elixir (Phoenix), and Python.
+Storage: Postgres, Redis, Elasticsearch, Firestore, and Snowflake.
+Mobile apps: React Native (with Swift and Java where necessary.)
+
+Joys of engineering at Padlet
+We have very few meetings. We value keeping you in flow.
+A lot of people use Padlet. We have to solve interesting scale and concurrency problems.
+Our users are in over 200 countries, using all kinds of devices and connections, and speaking over 40 languages. We have to solve interesting internationalization problems.
+We like to craft delightful user experiences. They’re satisfying to build.
+We try to solve problems creatively instead of just throwing money at them. We are engineers! We thrive in constraints, not in the absence of them.
+We ship often.
+We value beautiful code.
+
+Sorrows of engineering at Padlet
+We grew pretty fast last year and our processes are still catching up. E.g. we don't have 100% code coverage yet. Our deployment process isn't as painless as it could be. This sometimes leads to spending time on things that aren't the most fun. We’re working on it!
+Our project management process could be better. This sometimes leads to re-speccing in the middle of development, getting in the way of programming flow. We’re working on it!
+
+Some people you'd work with
+Linh Nguyen: At any given point, no one really knows where Linh is. We learn of his existence through pull requests and code reviews. Frontend maestro.
+Brian Koh: Only human we know who has impulsive urges to exercise. When he does, he doesn't care about outfits. We've seen him running in boots, tight jeans, and leather jackets. Exceptional engineer and even better mentor.
+
+Benefits
+Top tier medical, insurance for you and your family.
+Good stock options.
+Catered lunches and dinners.
+20 vacation days. Plus sickness and bereavement days for when life happens.
+All the gadgetry you need, including a new phone every year.
+
+Special time to join
+
+Because we're small, there's a lot of energy. And because we have tremendous traction, your first commit touches millions. This combination is rare and quite satisfying.
