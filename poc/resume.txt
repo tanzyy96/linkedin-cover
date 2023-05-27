@@ -1,0 +1,61 @@
+Title: Full Stack Developer
+Company: KiteSense
+Duration: Jun 2021 - Present1 year 11 months
+Location: Singapore
+Description: - Developed and maintained the webapp using modern technologies like VueJS, Golang and Amazon Web Services- Assisted in the ideation and product management of the application- Developed designs and collaborated with in-house UI/UX designers using Figma- Worked directly with project clients for project requirements and feedback for future improvements
+
+Title: Software Engineer Intern
+Company: One X Tech
+Duration: Jan 2021 - May 20215 months
+Location: Singapore
+Description: - Assist the tech lead to build and maintain scalable and high performing web sites and solutions- Architect, design and implement new sections, features and content for new and existing websites- Develop and optimise existing features
+
+Title: Software Engineer Intern
+Company: Bifrost (Techstars '20)
+Duration: Jun 2020 - Oct 20205 months
+Location: Singapore
+Description: - Built data pipeline for dataset analysis in Python and deployed to Google Cloud- Developed and launched the Bifrost Datasets website with React, TailwindCSS, GatsbyJS and  GraphQL- Practiced development with CI/CD and Cloud Services
+
+Title: AutoCAD Software Engineer Intern
+Company: Autodesk
+Duration: Jan 2020 - May 20205 months
+Location: Singapore
+Description: - Research and develop the integration to AutoCAD Web (https://web.autocad.com) for AutoCAD Mechanical and Architecture designs- Use technologies such as Clang, Emscripten and WebAssembly to bring AutoCAD Mechanical and Architecture components to AutoCAD Web and potentially Autodesk Fusion.
+
+Title: Student Assistant
+Company: Nanyang Technological University
+Duration: Sep 2018 - Jan 20201 year 5 months
+Location: Singapore
+Description: - Assisted in the delivery of weekly Python workshops- Developed online Python content for post-workshop practice and further learning- Participate in Python Machine Learning workshop
+
+Title: Blockchain Intern
+Company: Nanyang Technological University
+Duration: May 2019 - Aug 20194 months
+Location: Singapore
+Description: - Assisting as a Technical Writer in a NTU-based blockchain startup.- Reviewing technical documentation for early-phase construction of proof-of-concept application.
+
+Title: IT Intern
+Company: Becton Dickinson
+Duration: May 2018 - Jul 20183 months
+Location: Singapore
+Description: - Manage IT resources in accordance to company project schedules- Coordinate and communicate with offshore team- Review and streamline business and IT processes- Create alignment between the business and its local, regional and global IT services- Assist in the development of functional and system design specifications for business and technical team engagement
+
+Title: Service Crew
+Company: Mr Beans Coffee Co
+Duration: Jan 2018 - Apr 20184 months
+Location: Singapore
+
+Title: Nanyang Technological University
+Company: Bachelor's degreeComputer Science
+Duration: 2017 - 2021
+
+Title: Student Volunteer
+Company: National Youth Council Singapore
+Duration: Jul 2018
+Location: Education
+Description: 2-Week Youth Expedition Project to Nounmixay Village, Laos·        Planned and organised enrichment lessons for village students.·Constructed a new school facility.·      Undertook photography and videography duties.
+
+Title: iOS 11 Development Essential Training: Working with Views
+Company: Lynda.com
+Duration: Issued Jul 2019
+Location: See credential
