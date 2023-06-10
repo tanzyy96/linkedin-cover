@@ -10,6 +10,7 @@ import {
 	SimpleGrid,
 	Text,
 	useInterval,
+	Container,
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useRef, useState } from "react";
@@ -43,102 +44,99 @@ export default function WelcomePage() {
 	}, 2000);
 
 	return (
-		<Box>
-			<p className="mb-10 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-				<code className="font-mono font-bold"> &nbsp;CoverAI</code>
-			</p>
-			<Box width="80vw" margin="auto" marginY="25vh">
-				<Flex flexDirection="row" width="full" alignItems="flex-start">
-					<Box width="50vw">
-						<Heading>Work on your Interviews</Heading>
-						<Heading size="lg">
-							not your{" "}
-							<Text
-								className="inline-block"
-								fontSize={["3xl", "4xl", "5xl", "7xl"]}
-								bgGradient="linear(to-tr, orange.300, yellow.400)"
-								bgClip="text"
-							>
-								Cover Letters
-							</Text>
-						</Heading>
+		<Box width="80vw" margin="auto" marginY="22vh" maxWidth="1500px">
+			<SimpleGrid columns={2} spacing={10} width="100%">
+				<Flex flexDirection="column" gap="10px">
+					<Heading>Work on your Interviews</Heading>
+					<Heading size="lg">
+						not your{" "}
 						<Text
-							fontSize="18px"
-							marginTop="20px"
-							maxWidth="400px"
-							className=" text-gray-400"
+							className="inline-block"
+							fontSize={["3xl", "4xl", "5xl", "7xl"]}
+							bgGradient="linear(to-tr, orange.300, yellow.400)"
+							bgClip="text"
 						>
-							Use a multiple choice approach to generate your cover letter in
-							under 2 minutes using AI whilst having control at all times.
+							Cover Letters
 						</Text>
-					</Box>
-					<Box height="300px">
-						<Flex
-							flexDirection="column"
-							alignItems="center"
-							justifyContent="center"
-							gap="12px"
-							width="40vw"
-						>
-							{messages.map((message, i) => {
-								return (
-									<Collapse
-										key={message}
-										animateOpacity
-										in={i == 1 || i == 2 || i == 3}
-										delay={i * 0.2}
-										className="w-full"
-									>
-										<OptionCard key={i} text={message} />
-									</Collapse>
-								);
-							})}
-						</Flex>
-					</Box>
-				</Flex>
-				<Flex
-					flexDirection="row"
-					alignItems="center"
-					justifyContent="center"
-					gap="10px"
-					marginY="120px"
-				>
-					<Button colorScheme="yellow" onClick={() => router.push("/login")}>
-						Get started
-					</Button>
-					<Button
-						onClick={() =>
-							window.scrollBy({
-								top: window.innerHeight,
-								behavior: "smooth",
-							})
-						}
+					</Heading>
+					<Text
+						fontSize="18px"
+						marginTop="20px"
+						maxWidth="400px"
+						className=" text-gray-400"
 					>
-						Learn more
-					</Button>
+						Connect directly to LinkedIn to generate your cover letter in under
+						2 minutes using AI using a multiple choice approach.
+					</Text>
 				</Flex>
-				<Flex flexDirection="column" gap="150px">
-					<SimpleGrid columns={2} spacing={10} width="100%">
-						<Flex
-							flexDirection="column"
-							gap="10px"
-							justifyContent="center"
-							alignItems="center"
-						>
-							<Image
-								src="/einstein.png"
-								boxSize="400px"
-								alt="einstein writing cover letters"
-								className="rounded-lg"
-							/>
-							<Text fontSize={"xs"} className=" italic">
-								What you actually look like after writing your 100th cover
-								letter without CoverAI
-							</Text>
-						</Flex>
-						<Flex flexDirection="column" gap="10px" marginY="auto">
+				<Box height="300px">
+					<Flex
+						flexDirection="column"
+						alignItems="center"
+						justifyContent="center"
+						gap="12px"
+						width="40vw"
+					>
+						{messages.map((message, i) => {
+							return (
+								<Collapse
+									key={message}
+									animateOpacity
+									in={i == 1 || i == 2 || i == 3}
+									delay={i * 0.2}
+									className="w-full"
+								>
+									<OptionCard key={i} text={message} />
+								</Collapse>
+							);
+						})}
+					</Flex>
+				</Box>
+			</SimpleGrid>
+			<Flex
+				flexDirection="row"
+				alignItems="center"
+				justifyContent="center"
+				gap="10px"
+				marginY="120px"
+			>
+				<Button colorScheme="yellow" onClick={() => router.push("/login")}>
+					Get started
+				</Button>
+				<Button
+					onClick={() =>
+						window.scrollBy({
+							top: window.innerHeight,
+							behavior: "smooth",
+						})
+					}
+				>
+					Learn more
+				</Button>
+			</Flex>
+			<Flex flexDirection="column" gap="150px">
+				<SimpleGrid columns={2} spacing={10} width="100%">
+					<Flex
+						flexDirection="column"
+						gap="10px"
+						justifyContent="center"
+						alignItems="center"
+					>
+						<Image
+							src="/einstein.png"
+							boxSize="400px"
+							alt="einstein writing cover letters"
+							className="rounded-lg"
+						/>
+						<Text fontSize={"xs"} className=" italic">
+							What you actually look like after writing your 100th cover letter
+							without CoverAI
+						</Text>
+					</Flex>
+					<Container className=" text-gray-400" marginY="auto">
+						<Flex flexDirection="column" gap="10px">
 							<Heading>Integrated with LinkedIn</Heading>
-							<span className=" text-gray-400">
+							<Text>
 								If you&apos;re on the{" "}
 								<Image
 									src="/LI-Logo.png"
@@ -151,14 +149,16 @@ export default function WelcomePage() {
 								look no further. Just by providing your public LinkedIn URL, we
 								can pull your work, education and other experiences to teach our
 								AI more about yourself!
-							</span>
+							</Text>
 							<Text className=" text-gray-400">
 								Finally, simply pass in the job description and we&apos;ll
 								generate a cover letter for you. Ezpz!
 							</Text>
 						</Flex>
-					</SimpleGrid>
-					<SimpleGrid columns={2} spacing={10} width="100%">
+					</Container>
+				</SimpleGrid>
+				<SimpleGrid columns={2} spacing={10} width="100%">
+					<Container>
 						<Flex flexDirection="column" gap="10px" marginY="auto">
 							<Heading>Stay in control</Heading>
 							<Text className=" text-gray-400">
@@ -177,27 +177,27 @@ export default function WelcomePage() {
 								case you want to add a personal touch.
 							</Text>
 						</Flex>
-						<Flex
-							flexDirection="column"
-							gap="10px"
-							justifyContent="center"
-							alignItems="center"
-						>
-							<ParagraphsView
-								paragraphs={[
-									"I am applying to the best job in the world right now...",
-									"You can click and edit easily!",
-								]}
-							/>
-						</Flex>
-					</SimpleGrid>
-					<Flex className="flex justify-center items-center">
-						<Button colorScheme="yellow" onClick={() => router.push("/login")}>
-							Get started with CoverAI
-						</Button>
+					</Container>
+					<Flex
+						flexDirection="column"
+						gap="10px"
+						justifyContent="center"
+						alignItems="center"
+					>
+						<ParagraphsView
+							paragraphs={[
+								"I am applying to the best job in the world right now...",
+								"You can click and edit easily!",
+							]}
+						/>
 					</Flex>
+				</SimpleGrid>
+				<Flex className="flex justify-center items-center">
+					<Button colorScheme="yellow" onClick={() => router.push("/login")}>
+						Get started with CoverAI
+					</Button>
 				</Flex>
-			</Box>
+			</Flex>
 		</Box>
 	);
 }

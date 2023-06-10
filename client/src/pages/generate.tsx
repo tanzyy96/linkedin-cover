@@ -17,8 +17,11 @@ import { useRouter } from "next/router";
 import ParagraphsView from "@/components/ParagraphsView/ParagraphsView";
 import { useIntervalText } from "@/hooks/useIntervalText";
 import OptionCard from "@/components/OptionCard/OptionCard";
+import { useSession } from "next-auth/react";
 
 const inter = Inter({ subsets: ["latin"] });
+
+fetch("/api/profile-url");
 
 const getCoverLetter = async (
 	linkedinUrl: string,
@@ -46,7 +49,13 @@ const getCoverLetter = async (
 
 export default function Home() {
 	const router = useRouter();
+	const session = useSession();
 	const isDemo = router.query.demo == "true";
+
+	if (session.status === "unauthenticated") {
+		router.push("/login");
+	}
+
 	const messageHistory = useRef(
 		[] as { text: string; type: "human" | "assistant" | "system" }[]
 	);
@@ -125,24 +134,35 @@ export default function Home() {
 			</div>
 			<Flex flexDirection="row" width="full" alignItems="flex-start">
 				<div className="flex flex-col gap-4 justify-center items-center w-8/12 px-20">
-					<InputGroup size="lg" maxWidth={2000}>
-						<InputLeftAddon>https://</InputLeftAddon>
-						<Input
-							placeholder="sg.linkedin.com/in/my-name-id"
-							value={linkedinUrl}
-							onChange={(e) => setLinkedinUrl(e.target.value)}
-						></Input>
-					</InputGroup>
+					<Flex flexDirection={"row"} alignItems="center" gap={4}>
+						<InputGroup size="lg" minWidth={"30vw"}>
+							<InputLeftAddon>https://</InputLeftAddon>
+							<Input
+								placeholder="sg.linkedin.com/in/my-name-id"
+								value={linkedinUrl}
+								onChange={(e) => setLinkedinUrl(e.target.value)}
+							></Input>
+						</InputGroup>
+						<Button
+							onClick={() => window.open("https://linkedin.com/", "_blank")}
+						>
+							Go to LinkedIn{" "}
+						</Button>
+					</Flex>
 					<Textarea
 						placeholder="Insert Job description here!"
 						onChange={onTextChange}
 						value={jdText}
+						minHeight={300}
 					></Textarea>
 					<div className="self-end text-xs">Word Count: {charCount}</div>
 					<Button
 						onClick={generate}
 						isLoading={isLoading}
-						isDisabled={options.length > 0 && selectedOptionIndex == -1}
+						isDisabled={
+							(options.length > 0 && selectedOptionIndex == -1) ||
+							charCount == 0
+						}
 						loadingText={buttonLoadingText}
 					>
 						{options.length == 0

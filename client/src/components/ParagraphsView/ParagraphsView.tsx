@@ -8,7 +8,8 @@ export default function ParagraphsView(props: {
 		<Flex
 			flexDirection="column"
 			alignItems="center"
-			maxWidth="600px"
+			width="100%"
+			maxWidth={"600px"}
 			border="1px solid white"
 			borderRadius="20px"
 			padding="20px"
