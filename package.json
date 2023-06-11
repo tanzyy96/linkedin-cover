@@ -1,9 +1,0 @@
-{
-  "devDependencies": {
-    "eslint": "^8.40.0",
-    "eslint-config-react-app": "^7.0.1"
-  },
-  "dependencies": {
-    "@fontsource/caladea": "^4.5.10"
-  }
-}
